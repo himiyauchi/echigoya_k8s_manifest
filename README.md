@@ -1,0 +1,1 @@
+# echigoya_k8s_manifest
