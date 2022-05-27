@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calc
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mychart
+  template:
+    metadata:
+      labels:
+        app: mychart
+    spec:
+      containers:
+        - name: calc
+          image: 226104789339.dkr.ecr.ap-northeast-1.amazonaws.com/calc:{{ .Values.imgv }}
+          ports:
+            - containerPort: 5042

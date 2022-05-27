@@ -1,1 +1,1 @@
-# echigoya_k8s_manifest
+# miyauchi-k8s-manifest
