@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://himiyauchi.github.io/miyauchi-k8s-manifest/'
-    targetRevision: v0.25
+    repoURL: 'https://himiyauchi.github.io/echigoya_k8s_manifest/'
+    targetRevision: v0.4
     chart: test-helm
   destination:
     server: 'https://kubernetes.default.svc'
