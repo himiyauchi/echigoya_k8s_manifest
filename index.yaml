@@ -3,7 +3,17 @@ entries:
   test-helm:
   - apiVersion: v2
     appVersion: 1.18.0
-    created: "2022-05-26T23:21:24.791427323-04:00"
+    created: "2022-05-30T03:43:37.807844931-04:00"
+    description: A Helm chart for Kubernetes
+    digest: f76a0159db271f66c5ae9622ec1efcfb4eace12432210bd530875f3f9850272e
+    name: test-helm
+    type: application
+    urls:
+    - https://himiyauchi.github.io/echigoya_k8s_manifest/test-helm-v0.7.tgz
+    version: v0.7
+  - apiVersion: v2
+    appVersion: 1.18.0
+    created: "2022-05-30T03:43:37.807667492-04:00"
     description: A Helm chart for Kubernetes
     digest: bd1deeda88ffece82d98abe63aab7b836487ccaf68a9d03e97d241fc8a0edb00
     name: test-helm
@@ -13,7 +23,7 @@ entries:
     version: v0.6
   - apiVersion: v2
     appVersion: 1.18.0
-    created: "2022-05-26T23:21:24.791252005-04:00"
+    created: "2022-05-30T03:43:37.807464974-04:00"
     description: A Helm chart for Kubernetes
     digest: 501dfd14286011f0ca0c03c096dc6b71a68e3eab0ddfa5fa8e0b6d37a285fb52
     name: test-helm
@@ -21,24 +31,4 @@ entries:
     urls:
     - https://himiyauchi.github.io/echigoya_k8s_manifest/test-helm-v0.5.tgz
     version: v0.5
-  - apiVersion: v2
-    appVersion: 1.18.0
-    created: "2022-05-26T23:21:24.791071464-04:00"
-    description: A Helm chart for Kubernetes
-    digest: 497aeb99a6a39125b072dbac30447cdb8f1e14de28ca4bc1271fdd7f84d03d56
-    name: test-helm
-    type: application
-    urls:
-    - https://himiyauchi.github.io/echigoya_k8s_manifest/test-helm-v0.4.tgz
-    version: v0.4
-  - apiVersion: v2
-    appVersion: 1.18.0
-    created: "2022-05-26T23:21:24.790875394-04:00"
-    description: A Helm chart for Kubernetes
-    digest: 5247adb4d1441b58f8b29049acbc174fe8e56ab553b89336daa55930dae616d2
-    name: test-helm
-    type: application
-    urls:
-    - https://himiyauchi.github.io/echigoya_k8s_manifest/test-helm-v0.3.tgz
-    version: v0.3
-generated: "2022-05-26T23:21:24.790496909-04:00"
+generated: "2022-05-30T03:43:37.807095459-04:00"
