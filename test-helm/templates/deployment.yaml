@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-echigoya
+  namespace: {{ .Values.targetnamespace }}
 spec:
   replicas: 2
   selector:
