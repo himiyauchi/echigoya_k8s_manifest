@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: 100
+  name: test
   namespace: argocd
 spec:
-  project: 100
+  project: default
   source:
     repoURL: 'https://github.com/himiyauchi/echigoya-k8s-manifest.git'
     path: test-helm
-    targetRevision: 'feature-100'
+    targetRevision: 'v0.7'
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
