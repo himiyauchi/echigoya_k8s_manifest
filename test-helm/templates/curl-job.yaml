@@ -3,7 +3,7 @@ kind: Job
 metadata:
   name: hoge
   annotations:
-    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook: SyncFail
     argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
 spec:
   parallelism: 1
