@@ -1,0 +1,26 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: hoge
+  annotations:
+    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
+spec:
+  parallelism: 1
+  completions: 1
+  template:
+    metadata:
+      labels:
+        app: hoge
+    spec:
+      containers:
+      - name: hoge
+        image: alpine:latest
+        command: ["/bin/sh"]
+        args:
+          - "-c"
+          - |
+            apk update;
+            apk add curl;
+            curl -k -v -H Content-Type:application/json -d '{ "text": "from k8s job ater argocd synced" }' 'https://chat.googleapis.com/v1/spaces/AAAAds0qUNA/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=tRwF90V_BFgAlmHXJ4YWbqG3QChYqHEsbu4km5fzqNs%3D'
+      restartPolicy: Never
