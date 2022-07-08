@@ -5,6 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/hook: PostSync
     argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
+  namespace: argocd
 spec:
   parallelism: 1
   completions: 1
