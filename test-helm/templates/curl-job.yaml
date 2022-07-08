@@ -22,5 +22,5 @@ spec:
           - |
             apk update;
             apk add curl;
-            curl -k -v -H Content-Type:application/json -d '{ "text": "from k8s job ater argocd synced" }' 'https://chat.googleapis.com/v1/spaces/AAAA5bIx1mg/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=AP1jZ3VNO8Z3rGhfr4UoPk6UwSBdkm6Mx6VGEXZDrTA%3D'
+            curl -k -v -H Content-Type:application/json -d '{ "text": "from k8s job ater argocd synced" }' 'https://chat.googleapis.com/v1/spaces/AAAAds0qUNA/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=tRwF90V_BFgAlmHXJ4YWbqG3QChYqHEsbu4km5fzqNs%3D'
       restartPolicy: Never
